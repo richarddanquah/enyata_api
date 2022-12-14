@@ -5,15 +5,11 @@ const port = 3000;
 
 //middleware
 app.use(express.json());
-app.get("/", (req,res)=> {
-    res.send("Hello World!");
+app.get("/", (req, res) => {
+  res.send("enyata home test api v1");
 });
-
 
 // routes
 app.use("/api/v1/incidentreport", incidentReportRoutes);
 
-
-
-
-app.listen(port, ()=> console.log(`app listening on port ${port}`));
+app.listen(port, () => console.log(`app listening on port ${port}`));
